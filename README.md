@@ -33,9 +33,10 @@ In any case, whatever the converter specified, short-circuit conditions or, in g
 The converter specification data are the following: 
 
 - Nominal input voltage: 325VDC (230VAC)
-- Minimal input voltage: 295VDC (210VAC)
 - Maximal input voltage: 355VDC (250VAC)
+- Minimal input voltage: 295VDC (210VAC)
+- Brwown-out: 260VDC (184VAC)
 - Output voltage 1: +/-28V 3A
-- Output voltage 2: +/-18V 1A
-- Resonance frequency: 100 kHz 
+- Output voltage 2: +/-14V 1A
+- Resonance frequency: 85 kHz 
 - Max operating frequency: 250 kHz 
