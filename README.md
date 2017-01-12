@@ -41,7 +41,7 @@ The converter specification data are the following:
 - Resonance frequency: 85 kHz 
 - Max operating frequency: 250 kHz 
 
-Operation and Design
+##Operation and Design
 
 LLC converter belongs to the SRC (serial resonant converter) series, where the resonant network is established with two inductors and a capacity on the primary side of the converter (hence LLC). 
 
