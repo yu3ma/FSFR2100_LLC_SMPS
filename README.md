@@ -51,7 +51,7 @@ Basically, in  terms of consumer, LLC is closer to the current than to voltage s
 
 Unlike the SRC, there are PRC (parallel resonant converters), which can work within a much wider range of supply voltage (completely feasible with all the control circuits for SRC / LLC), but have some other drawbacks (again huge topic). For now, let us just say that they are more expensive and complex to carry out and that they can't perform with light-load and no-load.
 
-LLC also can't work no-load, but it can work with very light loads (usually some parasitic load   is sufficient for self-supply and possibly some light bleeder). Unfortunately, with light loads <1/3 to 1/5 (depending on model), LLC loses its great ZVS feature and KKD abruptly falls at low loads.
+LLC also can't work no-load, but it can work with very light loads (usually some parasitic load   is sufficient for self-supply and possibly some light bleeder). Unfortunately, with light loads <1/3 to 1/5 (depending on model), LLC loses its great ZVS feature and efficiency abruptly falls at low loads.
 
 However, this is not a significant drawback as it  means that  with low power, total energy  is    smaller, therefore  the heat that is lost  in general remains low and within acceptable limits.
 Therefore do not be surprised that the LLC is heated most with relatively small loads - this is normal. 
@@ -60,7 +60,7 @@ As the load grows, its temperature decreases (we are here considering the primar
 
 The hottest component under high loads on each LLC is the primary side of the transformer and it is quite normal. It is normal that the primary coil reaches about 60-80ºC, as well sa the core.
 
-Otherwise, a ferrite core for SMPS  has minimum losses within the temperature range of 60-120 ºC typically. Lowest peak  is at about 80ºC in the majority and  manufacturers use this feature. If you make a SMPS and the transformer is cold you should know that you have a smaller KKD than feasible.
+Otherwise, a ferrite core for SMPS  has minimum losses within the temperature range of 60-120 ºC typically. Lowest peak  is at about 80ºC in the majority and  manufacturers use this feature. If you make a SMPS and the transformer is cold you should know that you have a smaller efficiency than feasible.
 
 Our sample (as well as the most modern ones) was performed with so-called "Integrated magnetics" structure, where the first two L components are made on the same core as: 
 
