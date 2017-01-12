@@ -35,8 +35,37 @@ The converter specification data are the following:
 - Nominal input voltage: 325VDC (230VAC)
 - Maximal input voltage: 355VDC (250VAC)
 - Minimal input voltage: 295VDC (210VAC)
-- Brwown-out: 260VDC (184VAC)
+- Brown-out: 260VDC (184VAC)
 - Output voltage 1: +/-28V 3A
 - Output voltage 2: +/-14V 1A
 - Resonance frequency: 85 kHz 
 - Max operating frequency: 250 kHz 
+
+Operation and Design
+
+LLC converter belongs to the SRC (serial resonant converter) series, where the resonant network is established with two inductors and a capacity on the primary side of the converter (hence LLC). 
+
+This can be accomplished with a simple SMPS (Switched Mode Power Supply) transformer station with external inductance as  Ls (where this is much easier to be done on the secondary side of the transformer), but integrated structure has some noticeable advantages regarding external inductance  in terms of depending on the energy that is recirculated vs supply voltage.  At this point we need to  understand that the LLC with integrated structure is more flexible to change of the supply voltage than the SRC with external coil. 
+
+Basically, in  terms of consumer, LLC is closer to the current than to voltage source supply (which applies to all SRCs),  resulting therefore in exceptional immunity to overload and short-circuit.  Also, all SRCs are dependent on relatively narrow span of voltage supply. 
+
+Unlike the SRC, there are PRC (parallel resonant converters), which can work within a much wider range of supply voltage (completely feasible with all the control circuits for SRC / LLC), but have some other drawbacks (again huge topic). For now, let us just say that they are more expensive and complex to carry out and that they can't perform with light-load and no-load.
+
+LLC also can't work no-load, but it can work with very light loads (usually some parasitic load   is sufficient for self-supply and possibly some light bleeder). Unfortunately, with light loads <1/3 to 1/5 (depending on model), LLC loses its great ZVS feature and KKD abruptly falls at low loads.
+
+However, this is not a significant drawback as it  means that  with low power, total energy  is    smaller, therefore  the heat that is lost  in general remains low and within acceptable limits.
+Therefore do not be surprised that the LLC is heated most with relatively small loads - this is normal. 
+
+As the load grows, its temperature decreases (we are here considering the primary side) to about 80% of power when a typical well-constructed LLC is coldest (except the output diode), then again his temperature rises towards 100% of load, when it  reaches a similar value as with maybe 30%.
+
+The hottest component under high loads on each LLC is the primary side of the transformer and it is quite normal. It is normal that the primary coil reaches about 60-80ºC, as well sa the core.
+
+Otherwise, a ferrite core for SMPS  has minimum losses within the temperature range of 60-120 ºC typically. Lowest peak  is at about 80ºC in the majority and  manufacturers use this feature. If you make a SMPS and the transformer is cold you should know that you have a smaller KKD than feasible.
+
+Our sample (as well as the most modern ones) was performed with so-called "Integrated magnetics" structure, where the first two L components are made on the same core as: 
+
+- Ls (or Lr, serial leakage inductance) that is not coupled with the consumer, ie. the one that the primary chopper "see" as the sum of all the inductance of the magnetic structure, which are not coupled with the consumer. It basically almost does not change with the change of   consumer resistance (it is changing the minimum size in practice, due to the characteristics of the ferrite, but  it is not  of a significant importance). 
+
+- Lp (or Lm) parallel inductance, or inductance of the parallel connection of the primary magnetization inductance, ideal transformer and mapped Rac (of the consumer) to the  primary of the transformer. This inductance is variable, ie. depends on the mapped consumer resistance and its value can range from Lp (magnetization inductance of the transformer when mapped consumer resistance is infinite, ie. when the inverter has no-load), all the way to short-circuited where Lp is equal to zero. This inductance is the aspect of the chopper (rectangular signal generator) connected in series with Ls and resonant capacitor Cr.
+
+Both of these inductances in series with Cr comprise serial oscillatory circuit that has several interesting characteristics :
