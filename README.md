@@ -69,3 +69,29 @@ Our sample (as well as the most modern ones) was performed with so-called "Integ
 - Lp (or Lm) parallel inductance, or inductance of the parallel connection of the primary magnetization inductance, ideal transformer and mapped Rac (of the consumer) to the  primary of the transformer. This inductance is variable, ie. depends on the mapped consumer resistance and its value can range from Lp (magnetization inductance of the transformer when mapped consumer resistance is infinite, ie. when the inverter has no-load), all the way to short-circuited where Lp is equal to zero. This inductance is the aspect of the chopper (rectangular signal generator) connected in series with Ls and resonant capacitor Cr.
 
 Both of these inductances in series with Cr comprise serial oscillatory circuit that has several interesting characteristics :
+
+
+- Q factor, or quality of the circuit, ie. its ability for one or both (depending on the points of observation) of the input values (voltage / current) to be multiplied to a greater value than entered. Size depends on the relationship between the total L and C, and the resistance of the load entered into the circuit. As this can be multiplied,  it can also be reduced. It all depends on Q.
+
+- Phase shift between voltage and current, which depends on the frequency applied to the circuit and the resistance of the  load entered into the circuit, as well as relation between L and C. A very important thing!
+
+- The characteristic impedance (reactance), and the impedance "as seen" by the generator, which also depends on all three of the above mentioned values.  The character of the reactance-impedance is very important and below the resonant frequencies it is predominantly capacitive, and at frequencies above the resonance predominantly inductive. 
+
+- Resonant frequency, which also depends on the L, C and the resistance of the load  entered into the circuit. It is the lowest in an LLC network when there is no consumption and equals to Ls + Lp + Cr (you can use the Thomson's form, I have only mentioned components as information), and it is the lowest when the  load is short-circuit, and there are left only Ls and C. 
+
+Serial Oscillatory Circuit finally has L and C  connected in series, with reactants  of each component having opposite phase status and  are deducted from each other. 
+
+In the center of resonance the two reactance void and the current of the ideal  oscillatory circuit becomes infinite (infinite Q). At this point  the generator is seen as a short circuit, while the voltages of individual elements (L and C) also reach the infinite value, but with the opposite phase positions, in terms of the generator they are void, and their sum is equal to zero, which is seen by the generator as a short circuit. 
+
+In practice, it is difficult to achieve infinite Q but it is not difficult to achieve such a kind of enlargement that is resulting in multiple voltage and current at the center of resonance. 
+
+At the center of resonance the only "obstacle" to infinite sizes is inserted / mapped resistance-load. 
+
+If we allow frequency of our converter in idle mode  to fall on resonance frequency Ls + Lp + Cr (Thomson's form should be used) it would have a few kilovolts at  Cr and Ls + Lp (primary side of the  transformer ) and electricity generators (chopper) several times greater than the  normal. This would devastate the three "participants" if only the generator lasted long enough... 
+
+
+
+
+
+
+
