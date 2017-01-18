@@ -89,6 +89,23 @@ At the center of resonance the only "obstacle" to infinite sizes is inserted / m
 
 If we allow frequency of our converter in idle mode  to fall on resonance frequency Ls + Lp + Cr (Thomson's form should be used) it would have a few kilovolts at  Cr and Ls + Lp (primary side of the  transformer ) and electricity generators (chopper) several times greater than the  normal. This would devastate the three "participants" if only the generator lasted long enough... 
 
+Magnetic structures like our LLC are the most frequently performed in several ways: 
+
+- By moving away primary and secondary side of the transformer at the central pillar. In this way we are adjusting  Ls, and by inserting the gap between the core halves we are controling Lp.
+
+- With the use of long and thin magnetic paths  and by moving away primary and secondary side of the transformer and the thickness of the middle post Lp (such transformers were implemented in older models of  Sony TVs) 
+
+- By coiling one or both coils away from the center pillar as way of controlling Lp and 
+moving them away from each other as way of  controlling Ls. 
+
+- Combination of above mentioned methods.
+
+Using all three, or just more than one pillar to accommodate part of the coil + gap (that is intensively used by Dr. Ćuk in his converters of older generation, and he started using them again  recently). 
+
+By inserting magnetic shunt with an additional part of the core, where it is convenient to use (this method is again often used by Dr. Ćuk  and it requires custom core).
+
+In addition to the above mentioned, there is an unlimited number of possibilities, but sometimes  we are sacrificing the quality of the inverter in order of performing an easy to produce and inexpensive  transformer.
+
 
 
 
