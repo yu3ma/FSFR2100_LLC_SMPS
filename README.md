@@ -116,7 +116,7 @@ In reality, the transformer is made up of many small LP and Ls and the whole cro
 
 We mentioned that the performance is primarily based on a sufficiently good degree of efficiency and low cost of production. For example, one thin elongated core with four times smaller cross-section of the middle post convey the same power as the standard core which is more expensive. 
 
-But when we examine the long-term economic balance, the question is whether some companies earned more by making production line for these special cores, investing huge amounts of money in the production line, to finally spare in the bulk of the core (which significantly changes the price), or other companies that use more expensive and massive iron-cores, but at the same time spared on investing in production?
+But when we examine the long-term economic balance, the question is whether some companies earned more by investing huge amounts of money in the production line, to finally spare in the bulk of the core (which significantly changes the price), or other companies that use more expensive and massive iron-cores, but at the same time spared on investing in production?
 
 
 
