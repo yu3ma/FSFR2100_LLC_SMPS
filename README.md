@@ -106,6 +106,17 @@ By inserting magnetic shunt with an additional part of the core, where it is con
 
 In addition to the above mentioned, there is an unlimited number of possibilities, but sometimes  we are sacrificing the quality of the inverter in order of performing an easy to produce and inexpensive  transformer.
 
+The most often performed magnetic structure for the LLC in practice is the standard core  with moderate band-gap between primary and secondary side of the transformer.  This model is quite suited and easy for serial production and works well enough.
+
+Do not  get deceived by  the simple display of Ls and Lp in the application notes. Reality is different than that.
+
+In app. notes the two sizes  are shown as the sum of all individual Ls and Lp, which vary by individual turns in the transformer. However, It is far more complex than this simple view. 
+
+In reality, the transformer is made up of many small LP and Ls and the whole crowd of parasitic capacity around the transformer, both at the primary and at the secondary side and control of these elementary parts is highly influencing the final operation of the inverter. 
+
+We mentioned that the performance is primarily based on a sufficiently good degree of efficiency and low cost of production. For example, one thin elongated core with four times smaller cross-section of the middle post convey the same power as the standard core which is more expensive. 
+
+But when we examine the long-term economic balance, the question is whether some companies earned more by making production line for these special cores, investing huge amounts of money in the production line, to finally spare in the bulk of the core (which significantly changes the price), or other companies that use more expensive and massive iron-cores, but at the same time spared on investing in production?
 
 
 
