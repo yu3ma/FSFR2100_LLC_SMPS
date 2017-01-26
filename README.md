@@ -1,5 +1,5 @@
 # FSFR2100_LLC_SMPS
-LLC resonant half-bridge isolated 200W Switched Mode Power Supply based on Fairchild's (now On Semiconductors) FSFR2100XS power controller.
+LLC resonant half-bridge isolated 200W Switched Mode Power Supply based on Fairchild's (now On Semiconductor's) FSFR2100XS power controller.
 
 This repository include design files, shematic and single-layer PCB films for DIY high power high quality resonant AC/DC converter.
 
@@ -64,7 +64,7 @@ Otherwise, a ferrite core for SMPS  has minimum losses within the temperature ra
 
 Our sample (as well as the most modern ones) was performed with so-called "Integrated magnetics" structure, where the first two L components are made on the same core as: 
 
-- Ls (or Lr, serial leakage inductance) that is not coupled with the consumer, ie. the one that the primary chopper "see" as the sum of all the inductance of the magnetic structure, which are not coupled with the consumer. It basically almost does not change with the change of   consumer resistance (it is changing the minimum size in practice, due to the characteristics of the ferrite, but  it is not  of a significant importance). 
+- Ls (or Lr, serial leakage inductance) that is not coupled with the consumer, ie. the one that the primary chopper "see" as the sum of all the inductance of the magnetic structure, which are not coupled with the consumer. It basically almost does not change with the change of consumer resistance (it is changing the minimum size in practice, due to the characteristics of the ferrite, but  it is not  of a significant importance). 
 
 - Lp (or Lm) parallel inductance, or inductance of the parallel connection of the primary magnetization inductance, ideal transformer and mapped Rac (of the consumer) to the  primary of the transformer. This inductance is variable, ie. depends on the mapped consumer resistance and its value can range from Lp (magnetization inductance of the transformer when mapped consumer resistance is infinite, ie. when the inverter has no-load), all the way to short-circuited where Lp is equal to zero. This inductance is the aspect of the chopper (rectangular signal generator) connected in series with Ls and resonant capacitor Cr.
 
@@ -91,12 +91,11 @@ If we allow frequency of our converter in idle mode  to fall on resonance freque
 
 Magnetic structures like our LLC are the most frequently performed in several ways: 
 
-- By moving away primary and secondary side of the transformer at the central pillar. In this way we are adjusting  Ls, and by inserting the gap between the core halves we are controling Lp.
+- By moving away primary and secondary side of the transformer at the central pillar. In this way we are adjusting  Ls, and by inserting the gap between the core halves we are controlling Lp.
 
-- With the use of long and thin magnetic paths  and by moving away primary and secondary side of the transformer and the thickness of the middle post Lp (such transformers were implemented in older models of  Sony TVs) 
+- With the use of long and thin magnetic paths and by moving away primary and secondary side of the transformer and the thickness of the middle post Lp (such transformers were implemented in older models of  Sony TVs) 
 
-- By coiling one or both coils away from the center pillar as way of controlling Lp and 
-moving them away from each other as way of  controlling Ls. 
+- By coiling one or both coils away from the center pillar as way of controlling Lp and moving them away from each other as way of  controlling Ls. 
 
 - Combination of above mentioned methods.
 
@@ -112,7 +111,7 @@ Do not  get deceived by  the simple display of Ls and Lp in the application note
 
 In app. notes the two sizes  are shown as the sum of all individual Ls and Lp, which vary by individual turns in the transformer. However, It is far more complex than this simple view. 
 
-In reality, the transformer is made up of many small LP and Ls and the whole crowd of parasitic capacity around the transformer, both at the primary and at the secondary side and control of these elementary parts is highly influencing the final operation of the inverter. 
+In reality, the transformer is made up of many small Lp and Ls and the whole crowd of parasitic capacity around the transformer, both at the primary and at the secondary side and control of these elementary parts is highly influencing the final operation of the inverter. 
 
 We mentioned that the performance is primarily based on a sufficiently good degree of efficiency and low cost of production. For example, one thin elongated core with four times smaller cross-section of the middle post convey the same power as the standard core which is more expensive. 
 
