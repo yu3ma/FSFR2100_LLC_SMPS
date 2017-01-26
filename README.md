@@ -109,7 +109,7 @@ The most often performed magnetic structure for the LLC in practice is the stand
 
 Do not  get deceived by  the simple display of Ls and Lp in the application notes. Reality is different than that.
 
-In app. notes the two sizes  are shown as the sum of all individual Ls and Lp, which vary by individual turns in the transformer. However, It is far more complex than this simple view. 
+In app. notes the two sizes  are shown as the sum of all individual Ls and Lp, which vary for individual turns in the transformer. However, It is far more complex than this simple view. 
 
 In reality, the transformer is made up of many small Lp and Ls and the whole crowd of parasitic capacity around the transformer, both at the primary and at the secondary side and control of these elementary parts is highly influencing the final operation of the inverter. 
 
