@@ -5,17 +5,17 @@ This repository include design files, shematic and single-layer PCB films for DI
 
 Forum discussion: http://forum.yu3ma.net/showthread.php?tid=10
 
-##Introduction
+## Introduction
 
 The popularity of the LLC resonant converter in its half-bridge implementation is due to its high-efficiency, low level of EMI emissions and its ability to achieve high power density. These features fit the demands of many modern applications. LLC resonant half bridge converters are widely used in consumer electronics, like powering the display panel of LCD TV. 
 
-##FHA circuit model 
+## FHA circuit model 
 
 The FHA (First Harmonic Approximation) approach is based on the assumption that the power transfer from the source to the load through the resonant tank is almost completely associated to the fundamental harmonic of the Fourier expansion of the currents and voltages involved. This is consistent with the selective nature of resonant tank circuits. 
 The harmonics of the switching frequency are then neglected and the tank waveforms are assumed to be purely sinusoidal at the fundamental frequency: This approach gives quite accurate results for operating points at and above the resonance frequency of the resonant tank (in the continuous conduction mode), while it is less accurate, but still valid, at frequencies below the resonance (in the discontinuous conduction mode). 
 Good and properly constructed LLC works with basic harmonic of about 100KHz, has a very low content of other harmonics, sinusoidal current fed your transformer and output diode, has drastically lower dU and dI / dT of comparable hard switching topologies, minimal "ringing ", ie. generally speaking very "clean" waveform that is easy to filter.
 
-##Operation under overload and short-circuit condition 
+## Operation under overload and short-circuit condition 
 
 An important aspect to analyze is the converter's behavior during output overload and/or short-circuit. 
 
@@ -28,7 +28,7 @@ Limiting the minimum operating frequency is effective in preventing capacitive m
 It is worth noticing that, if the converter is specified to deliver a peak output power (where output voltage regulation is to be maintained) greater than the maximum continuous output power for a limited time, the resonant tank must be designed for peak output power to make sure that it will not run in capacitive mode. Of course, its thermal design will consider only the maximum continuous power. 
 In any case, whatever the converter specified, short-circuit conditions or, in general, overload conditions exceeding the maximum specified for the tank circuit, need to be handled with additional means, such as a current limitation circuit. 
 
-##Technical Specifications
+## Technical Specifications
 
 The converter specification data are the following: 
 
@@ -41,7 +41,7 @@ The converter specification data are the following:
 - Resonance frequency: 85 kHz 
 - Max operating frequency: 250 kHz 
 
-##Operation and Design
+## Operation and Design
 
 LLC converter belongs to the SRC (serial resonant converter) series, where the resonant network is established with two inductors and a capacity on the primary side of the converter (hence LLC). 
 
